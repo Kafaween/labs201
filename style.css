@@ -35,5 +35,23 @@ font-size: 20px;
 }
   
 footer{
-    margin-top: 20px;
+    margin-top:100px;
+    
+}
+
+#p1{
+background-color: blueviolet;
+}
+
+#p2{
+background-color: chocolate;
+}
+
+#p3{
+  background-color: darkgray;
+}
+
+#p4{
+background-color: darkmagenta;
+
 }
