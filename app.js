@@ -1,4 +1,5 @@
 'use strict'
+var point=0
 
 const n =prompt("whats your name ?")
 
@@ -27,6 +28,7 @@ arr.forEach(myFunction);
             
             //console.log("you are right")
             alert("you are right")
+            point++
             break;   
         case "n" :
             
@@ -41,7 +43,62 @@ arr.forEach(myFunction);
 
 
 } 
+
+let x =5;
+let usr;
+for (let i=0;i<4;i++) {
+ usr=prompt("Geuss a number between 0 and 10 ")
+ usr=Number(usr)
+ if (usr >x){
+    alert("pick a lower number")
+ }
+ else if (usr==x){
+     alert("You are right ")
+     point++
+     break;
+ }
+ else {
+     alert("pick a higher number")
+ }
+      
+
+}
+alert("The number is" + x)
+
+
+
+
+let arr_gs=["the god father","fight club","pain and gain"]
+
+for (let i=0;i<6;i++){
+    let the_gs=prompt(" geuse  one of my fav movies!!")
+    the_gs=the_gs.toLowerCase()
+    for(var z=0;z<3;z++){
+        if (the_gs==arr_gs[z]){
+        alert("you are right ")
+        point++
+        break;
+        }
     
-alert("it was to see you "+ n)
+       
+
+    }
+    
+    if (the_gs==arr_gs[z]){
+        
+        break;}
+    alert("you are wrong ")  
 
 
+
+}
+
+alert("my fav movies are" + arr_gs)
+
+
+alert("you where right "+point +"times")
+
+
+
+
+alert("it was nice to see you "+ n)
