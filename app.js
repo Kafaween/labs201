@@ -1,59 +1,64 @@
-'use strict'
-var point=0
+'use strict';
+let point=0;
 
-const n =prompt("whats your name ?")
+const n =prompt('whats your name ?');
 
-alert(" Welcome to my site " + n)
-
-
+alert(' Welcome to my site ' + n);
 
 
-alert("Answer these questions with Yes or No Pleas")
-let q1=prompt("do i like sports")
-q1 =q1.toLowerCase()
-if (q1 ==="yes" || q1==="y"){
-    alert("you are right ")
-}else{
-    alert("you are wrong")
+
+function firstGame(){
+  alert('Answer these questions with Yes or No Pleas');
+  let q1=prompt('do i like sports');
+  q1 =q1.toLowerCase();
+  if (q1 ==='yes' || q1==='y'){
+    alert('you are right ');
+    point++;
+  }else{
+    alert('you are wrong');
+  }
+
+
+  let q2=prompt('is mansaf my fav meal');
+  q2 =q2.toLowerCase();
+  if (q2 ==='yes' || q2==='y'){
+    alert('you are right ');
+    point++;
+  }else{
+    alert('you are wrong');
+  }
+
+
+  let q3 =prompt('do i watch movies');
+  q3 =q3.toLowerCase();
+  if (q3 ==='yes' || q3==='y'){
+    alert('you are right ');
+    point++;
+  }else{
+    alert('you are wrong');
+  }
+
+
+  let q4 =prompt(' am i the best Dota 2 player  :)??');
+  q4 =q4.toLowerCase();
+  if (q4 ==='yes' || q4==='y'){
+    alert('you are right ');
+    point++;
+  }else{
+    alert('you are wrong');
+  }
+
+
+  let q5 = prompt('is milkshake my fav drink');
+  q5 =q5.toLowerCase();
+  if (q5 ==='yes' || q5==='y'){
+    alert('you are right ');
+    point++;
+  }else{
+    alert('you are wrong');
+  }
 }
-
-
-let q2=prompt("is mansaf my fav meal")
-q2 =q2.toLowerCase()
-if (q2 ==="yes" || q2==="y"){
-    alert("you are right ")
-}else{
-    alert("you are wrong")
-}
-
-
-let q3 =prompt("do i watch movies")
-q3 =q3.toLowerCase()
-if (q3 ==="yes" || q3==="y"){
-    alert("you are right ")
-}else{
-    alert("you are wrong")
-}
-
-
-let q4 =prompt(" am i the best Dota 2 player  :)??")
-q4 =q4.toLowerCase()
-if (q4 ==="yes" || q4==="y"){
-    alert("you are right ")
-}else{
-    alert("you are wrong")
-}
-
-
-let q5 = prompt("is milkshake my fav drink")
-q5 =q5.toLowerCase()
-if (q5 ==="yes" || q5==="y"){
-    alert("you are right ")
-}else{
-    alert("you are wrong")
-}
-
-
+firstGame();
 
 
 
@@ -74,15 +79,15 @@ arr.forEach(myFunction);
 
     function myFunction(x){
     switch(x.toLowerCase()){
-        case "y":    
+        case "y":
         case "yes":
-            
+
             //console.log("you are right")
             alert("you are right")
             point++
-            break;   
+            break;
         case "n" :
-            
+
         case "no" :
             //console.log("you are wrong")
             alert("you are wrong")
@@ -94,65 +99,69 @@ arr.forEach(myFunction);
 
 
 } */
+function seconGame(x){
+  let usr;
+  for (let i=0;i<4;i++) {
+    usr=prompt('Geuss a number between 0 and 10 ');
+    usr=Number(usr);
+    if (usr >x){
+      alert('pick a lower number');
+    }
+    else if (usr===x){
+      alert('You are right ');
+      point++;
+      break;
+    }
+    else if(usr<x){
+      alert('pick a higher number');
+    }else{
+      alert('Please enter a number value');
+    }
 
-let x =5;
-let usr;
-for (let i=0;i<4;i++) {
- usr=prompt("Geuss a number between 0 and 10 ")
- usr=Number(usr)
- if (usr >x){
-    alert("pick a lower number")
- }
- else if (usr==x){
-     alert("You are right ")
-     point++
-     break;
- }
- else {
-     alert("pick a higher number")
- }
-      
 
+  }
+  if(usr!==x){
+    alert('The number is' + x);
+  }
 }
-alert("The number is" + x)
 
+seconGame(7);
 
+function thirdGame(){
+  let arr_gs=['the god father','fight club','pain and gain'];
 
-
-let arr_gs=["the god father","fight club","pain and gain"]
-
-for (let i=0;i<6;i++){
-    let the_gs=prompt(" geuse  one of my fav movies!!")
-    the_gs=the_gs.toLowerCase()
+  for (let i=0;i<6;i++){
+    let the_gs=prompt(' geuse  one of my fav movies!!');
+    the_gs=the_gs.toLowerCase();
     for(var z=0;z<3;z++){
-        if (the_gs==arr_gs[z]){
-        alert("you are right ")
-        point++
+      if (the_gs===arr_gs[z]){
+        alert('you are right ');
+        point++;
         break;
-        }
-    
-       
+      }
+
+
 
     }
-    
-    if (the_gs==arr_gs[z]){
-        
-        break;}
-    alert("you are wrong ")  
+
+    if (the_gs===arr_gs[z]){
+
+      break;}
+    alert('you are wrong ');
 
 
+
+  }
+
+  alert('my fav movies are' + arr_gs);
+
+
+  alert('you where right '+point +'times');
+
+
+
+
+  alert('it was nice to see you '+ n);
 
 }
-
-alert("my fav movies are" + arr_gs)
-
-
-alert("you where right "+point +"times")
-
-
-
-
-alert("it was nice to see you "+ n)
-
-
- 
+thirdGame();
