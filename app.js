@@ -10,6 +10,57 @@ alert(" Welcome to my site " + n)
 
 alert("Answer these questions with Yes or No Pleas")
 let q1=prompt("do i like sports")
+q1 =q1.toLowerCase()
+if (q1 ==="yes" || q1==="y"){
+    alert("you are right ")
+}else{
+    alert("you are wrong")
+}
+
+
+let q2=prompt("is mansaf my fav meal")
+q2 =q2.toLowerCase()
+if (q2 ==="yes" || q2==="y"){
+    alert("you are right ")
+}else{
+    alert("you are wrong")
+}
+
+
+let q3 =prompt("do i watch movies")
+q3 =q3.toLowerCase()
+if (q3 ==="yes" || q3==="y"){
+    alert("you are right ")
+}else{
+    alert("you are wrong")
+}
+
+
+let q4 =prompt(" am i the best Dota 2 player  :)??")
+q4 =q4.toLowerCase()
+if (q4 ==="yes" || q4==="y"){
+    alert("you are right ")
+}else{
+    alert("you are wrong")
+}
+
+
+let q5 = prompt("is milkshake my fav drink")
+q5 =q5.toLowerCase()
+if (q5 ==="yes" || q5==="y"){
+    alert("you are right ")
+}else{
+    alert("you are wrong")
+}
+
+
+
+
+
+
+
+
+/*
 let q2=prompt("is mansaf my fav meal")
 let q3 =prompt("do i watch movies")
 let q4 =prompt(" am i the best Dota 2 player  :)??")
@@ -42,7 +93,7 @@ arr.forEach(myFunction);
     }
 
 
-} 
+} */
 
 let x =5;
 let usr;
@@ -102,3 +153,6 @@ alert("you where right "+point +"times")
 
 
 alert("it was nice to see you "+ n)
+
+
+ 
