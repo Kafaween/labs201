@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 let point=0;
 
 const n =prompt('whats your name ?');
@@ -99,6 +99,8 @@ arr.forEach(myFunction);
 
 
 } */
+
+/*
 function seconGame(x){
   let usr;
   for (let i=0;i<4;i++) {
@@ -164,4 +166,4 @@ function thirdGame(){
   alert('it was nice to see you '+ n);
 
 }
-thirdGame();
+thirdGame();*/
