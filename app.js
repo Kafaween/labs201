@@ -1,4 +1,4 @@
-/*'use strict';
+'use strict'
 let point=0;
 
 const n =prompt('whats your name ?');
@@ -65,42 +65,9 @@ firstGame();
 
 
 
-/*
-let q2=prompt("is mansaf my fav meal")
-let q3 =prompt("do i watch movies")
-let q4 =prompt(" am i the best Dota 2 player  :)??")
-let q5 = prompt("is milkshake my fav drink")
-
-const arr = [q1,q2,q3,q4,q5];
 
 
 
-arr.forEach(myFunction);
-
-    function myFunction(x){
-    switch(x.toLowerCase()){
-        case "y":
-        case "yes":
-
-            //console.log("you are right")
-            alert("you are right")
-            point++
-            break;
-        case "n" :
-
-        case "no" :
-            //console.log("you are wrong")
-            alert("you are wrong")
-            break;
-
-
-
-    }
-
-
-} */
-
-/*
 function seconGame(x){
   let usr;
   for (let i=0;i<4;i++) {
@@ -166,4 +133,4 @@ function thirdGame(){
   alert('it was nice to see you '+ n);
 
 }
-thirdGame();*/
+thirdGame();
